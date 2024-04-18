@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* font-family: "Playfair Display", serif; */
+/* font-family: "Bebas Neue", sans-serif; */
+/* font-family: "Roboto", sans-serif; */
+
+.custom-font{
+  font-family: "Playfair Display", serif;
+}
+
+.custom-font-2{
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.custom-font-3{
+  font-family: "Roboto", sans-serif
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.fa-brands {
+  aspect-ratio: 1;
+  font-size: 30px;
+}
+/* new added style */
+
+.img-fluid{
+  aspect-ratio: 100/123;
+  object-fit: contain;
+  width: 50px;
+}
+
+.nav-link{
+  transition: all 300ms ease-in-out;
+  border-radius: 20px;
+  padding-block:0px ;
+}
+
+@media screen and (min-width: 923px) {
+  .hvr-round-corners:hover {
+    transition: all 300ms ease-out;
+    border-radius: 20px;
+    outline: 2px solid white;
+    color: white;
+  }
+}
+
+/* ======================== */
+
+:root {
+  --primary-color: #701c59;
+  --secondary-color: #202020;
+  --tertiary-color: #DC6C27;
+  --quaternary-color: #A9EFFF;
+}
+
+h1{
+  font-size: 3.125rem;
+}
+
+h2{
+  font-size: 1.75rem;
+}
+
+h3{
+  font-size: 1.375rem;
+}
+
+p.about-text{
+  font-size: 30px;
+}
+
+.custom-bg {
+  background-color: var(--secondary-color);
+}
+
+
+/* Button */
+
+.btn-primary {
+  color: var(--secondary-color);
+  background-color: var(--tertiary-color);
+  border-color: var(--quaternary-color);
+}
+
+.btn-primary:hover {
+  color: var(--secondary-color);
+  background-color: var(--quaternary-color);
+  border-color: var(--tertiary-color);
+}
+
+.luminary{
+  opacity: .75;
+  }
+
+.btn-secondary{
+  color: var(--secondary-color);
+  background-color: var(--quaternary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-secondary:hover{
+  color: white;
+  background-color: var(--secondary-color);
+  border-color: var(--quaternary-color);
+}
+
+/* Nav */
+
+.nav-item:hover {
+  border-radius: 5px;
+  border-color: black;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  color: white;
+}
+
+.spacer {
+  display: flex;
+  flex-grow: 1;
+}
+.navbar a {
+  color: white;
+}
+.navbar ul {
+  gap: 50px;
+  font-size: larger;
+}
+
+/* mobile only nav styles */
+@media screen and (max-width: 992px) {
+  .navbar-nav li a{
+    color: #CCC !important;
+  }
+
+  .navbar-nav li a.active {
+    outline: none !important;
+  }
+
+  .form-container form{
+    width: 100%;
+  }
+}
+
+
+/* mobile only nav styles - END */
+
+@media screen and (max-width: 600px) {
+  .spacer {
+    display: none;
+  }
+  .navbar ul {
+    gap: 5px;
+    font-size: large;
+    text-align: center;
+  }
+
+  main {
+    padding-bottom: 150px;
+  }
+
+  .custom-flex-container {
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+  }
+  .custom-col {
+    height: 270px;
+  }
+
+  .flex-gallery {
+    display: none;
+  }
+
+  h1{
+    font-size: 2.5rem;
+  }
+  
+  h2{
+    font-size: 1.375rem;
+  }
+  
+  h3{
+    font-size: 0.875rem;
+  }
+
+  p.about-text{
+    font-size: 16px;
+  }
+}
+
+/* Mobile Nav - White Toggler Icon */
+.navbar-toggler-icon {
+  background-color: white;
+}
+#toggeler {
+  color: white;
+}
+
+.navbar a.active {
+  color: white !important;
+  border-radius: 20px;
+  outline: 2px solid white;
+  color: white;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--primary-color);
+}
+
+.main-home {
+  background-image:  url("/images/home-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.custom-overlay{
+  width: 100vw;
+  height: 100vh;
+  background-color:var(--secondary-color);
+  opacity: 0.6;
+}
+
+.custom-overlay {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  flex-grow: 1;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+body {
+  color: white;
+  font-family: Roboto , sans-serif;
+}
+
+/* Portfolio Page */
+
+.portfolio-page.navbar {
+  background-color: var(--secondary-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  color: white;
+}
+
+.custom-flex-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.custom-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  height: 100%;
+  flex: 50%;
+  height: 100%;
+  background-color: black;
+  border: 1px solid #dc6c27;
+  border-top: 0;
+  color: white;
+}
+
+.photography-col {
+  background-image: url("./images/portolio-bg-1.jpg");
+  background-size: cover;
+}
+.videography-col {
+  background-image: url("./images/portolio-2-bg.JPG");
+  background-size: cover;
+}
+
+/* Galleries */
+
+.thumbnail-portrait {
+  width: 218px;
+  height: 273px;
+  object-fit: cover;
+}
+
+.thumbnail-landscape {
+  height: 273px;
+  object-fit: cover;
+}
+@media only screen and (max-width: 600px) {
+  .gallery-slider {
+    display: block;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .gallery-slider {
+    display: none;
+  }
+}
+
+/* About */
+.main-about {
+  background-image: url("/images/about-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contact */
+.main-contact {
+  background-image: url("/images/contact-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container{
+  max-width: 600px;
+  margin: 160px auto 0 auto;
+}
+
+
+.socialMedia i {
+  font-size: 30px;
+  color: white;
+  margin: 10px;
+}
+
+@media only screen and (min-width: 922px) {
+  .footer-location{
+    width: 260px;
+  }
+
+  .img-fluid{
+    aspect-ratio: 231/103;
+    object-fit: cover;
+    width: 100px;
+}
+
+}
