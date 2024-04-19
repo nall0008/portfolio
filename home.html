@@ -20,13 +20,14 @@
       </li>
     </ul>
   </div>
-  <!-- Main Navbar -->
-  <nav class="navbar navbar-expand-lg text-white p-3 align-content-between flex-wrap justify-content-between">
+  <!-- Navbar -->
+  <header role="banner">
+  <nav role="navigation" class="navbar navbar-expand-lg text-white p-3 align-content-between flex-wrap justify-content-between">
     <div class="d-flex justify-content-between flex-wrap w-100">
       <a class="navbar-brand" href="home.html">
         <picture>
           <source media="(min-width: 922px)" srcset="/images/desktop-logo.png" />
-          <img src="/images/mid-mobile-logo.png " alt="KNSnaps Logo" class="img-fluid" />
+          <img role="presentation" src="/images/mid-mobile-logo.png " alt="KNSnaps Logo" class="img-fluid" />
         </picture>
       </a>
 
@@ -53,29 +54,35 @@
       </div>
     </div>
   </nav>
+</header>
   <!-- Main -->
-  <main class="main-home">
+  <!-- <main id="main-content" role="main">
+  <article role="article" class="main-home"> -->
+    <main class="main-home">
     <div class="d-flex flex-column gap-5 align-items-center justify-content-center">
-      <h1 class="custom-font-2">KNSNAPS</h1>
+      <h1 role="heading" class="custom-font-2">KNSNAPS</h1>
       <h2>Photography and Videography</h2>
-      <h2 class="custom-font">"Moments Captured, Stories Told"</h3>
+      <h3 role="heading" class="custom-font">"Moments Captured, Stories Told"</h3>
         <a role="button" href="/contact.html" class="btn btn-primary w-50 rounded-pill">CONNECT</a>
     </div>
+    </article>
   </main>
 <!-- Footer -->
-  <footer class="text-light footer p-3 text-center">
-    <div
-      class="d-flex flex-column align-content-center justify-content-center gap-2 flex-wrap flex-lg-row justify-content-lg-between align-content-lg-center">
+  <footer role="contentinfo" class="text-light footer p-3 text-center">
+    <div class="d-flex flex-column align-content-center justify-content-center gap-2 flex-wrap flex-lg-row justify-content-lg-between align-content-lg-center">
       <div class="footer-location d-flex gap-2 justify-content-center flex-lg-column text-lg-start">
         <h6>Location</h6>
         <h6>Phone Number</h6>
       </div>
+      <!-- <li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">Location: <span itemprop="streetAddress">123 Main St</span>, <span itemprop="addressLocality">City</span>, <span itemprop="addressRegion">State</span>, <span itemprop="postalCode">12345</span></li>
+      <li itemprop="telephone">Phone Number: <span itemprop="telephone">123-456-7890</span></li>
+    </ul> -->
       <span class="align-self-center">© 2024 KNSnaps. All Rights Reserved.</span>
       <div class="order-first d-flex align-content-center justify-content-center gap-5 order-lg-last align-self-center">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-linkedin"></i>
+          <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
       </div>
     </div>
   </footer>

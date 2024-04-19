@@ -51,6 +51,7 @@
 .fa-brands {
   aspect-ratio: 1;
   font-size: 30px;
+  color: white;
 }
 
 /* new added style */
@@ -84,19 +85,19 @@
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 48px;
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 28px;
 }
 
 h3 {
-  font-size: 1.375rem;
+  font-size: 22px;
 }
 
 p.about-text {
-  font-size: 1.75rem;
+  font-size: 28px;
 }
 
 .custom-bg {
@@ -110,14 +111,14 @@ p.about-text {
   color: var(--secondary-color);
   background-color: var(--tertiary-color);
   border-color: var(--quaternary-color);
-  font-size: 0.875rem;
+  font-size: 14px;
 }
 
 .btn-primary:hover {
   color: var(--secondary-color);
   background-color: var(--quaternary-color);
   border-color: var(--tertiary-color);
-  font-size: 0.875rem;
+  font-size: 14px;
 }
 
 .luminary {
@@ -128,14 +129,14 @@ p.about-text {
   color: var(--secondary-color);
   background-color: var(--quaternary-color);
   border-color: var(--secondary-color);
-  font-size: 1.125rem;
+  font-size: 18px;
 }
 
 .btn-secondary:hover {
   color: white;
   background-color: var(--secondary-color);
   border-color: var(--quaternary-color);
-  font-size: 1.125rem;
+  font-size: 18px;
 }
 
 /* Nav */
@@ -213,19 +214,19 @@ p.about-text {
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 40px;
   }
 
   h2 {
-    font-size: 1.75rem;
+    font-size: 28px;
   }
 
   h3 {
-    font-size: 0.875rem;
+    font-size: 14px;
   }
 
   p.about-text {
-    font-size: 1rem;
+    font-size: 16px;
   }
 }
 
@@ -388,6 +389,10 @@ body {
   margin: 0 auto;
 }
 
+.form-control{
+  background-color: var(--secondary-color);
+}
+
 /* Footer */
 
 footer {
@@ -399,7 +404,7 @@ footer {
   background-color: var(--primary-color);
 }
 
-.socialMedia i {
+.contactIcons i {
   font-size: 30px;
   color: white;
   margin: 10px;

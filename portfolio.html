@@ -1,358 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio</title>
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <!-- Style Sheet -->
-    <link rel="stylesheet" href="/style.css" />
-  </head>
-  <body>
-    <div>
-      <ul id="skipnav">
-        <li>
-          <a href="#main-content" aria-label="Skip to main content">Skip to main content</a>
-        </li>
-      </ul>
-    </div>
-    <!-- Main Navbar -->
-    <nav
-      class="portfolio-page navbar navbar-expand-lg text-white p-3 align-content-between flex-wrap justify-content-between"
-    >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <div>
+    <ul id="skipnav">
+      <li>
+        <a href="#main-content" aria-label="Skip to main content">Skip to main content</a>
+      </li>
+    </ul>
+  </div>
+  <!-- Navbar -->
+  <header role="banner">
+    <nav role="navigation" class="portfolio-page navbar navbar-expand-lg text-white p-3 align-content-between flex-wrap justify-content-between">
       <div class="d-flex justify-content-between flex-wrap w-100">
         <a class="navbar-brand" href="home.html">
           <picture>
-            <source
-              media="(min-width: 922px)"
-              srcset="/images/desktop-logo.png"
-            />
-            <img
-              src="/images/mid-mobile-logo.png "
-              alt="KNSnaps Logo"
-              class="img-fluid"
-            />
+            <source media="(min-width: 922px)" srcset="/images/desktop-logo.png" />
+            <img role="presentation" src="/images/mid-mobile-logo.png " alt="KNSnaps Logo" class="img-fluid" />
           </picture>
         </a>
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa-solid fa-bars" id="toggeler"></i>
         </button>
         <div class="collapse navbar-collapse mx-5 mx-lg-0" id="navbarNav">
           <div class="spacer"></div>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a
-                class="nav-link hvr-round-corners"
-                aria-current="page"
-                href="/home.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active hvr-round-corners" href="/portfolio.html"
-                >Portfolio</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link hvr-round-corners" href="/about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link hvr-round-corners" href="/contact.html"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
+            <a class="nav-link hvr-round-corners" aria-current="page" href="/home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active hvr-round-corners" href="/portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-round-corners" href="/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-round-corners" href="/contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
   <div class="custom-bg">
-  <main class="main-portfolio">
-    <!-- Header Section -->
-    <section class="portfolio-banner">
-      <div class="custom-flex-container mb-3">
-        <div class="custom-col photography-col">
-          <div class="d-flex flex-column justify-content-end w-100  h-100 pb-3 g-lg-4">
-            <h1 class="w-100 text-center">Photography</h1>
-            <div class="d-flex justify-content-evenly w-100">
-              <a href="#live-events" type="button" class="btn btn-secondary luminary rounded-pill">Live Events</a>
-              <a href="#architecture" type="button" class="btn btn-secondary luminary rounded-pill">Architecture</a>
-              <a href="#landscapes" type="button" class="btn btn-secondary luminary rounded-pill">Landscapes</a>
+    <main class="main-portfolio">
+      <!-- Banner Section -->
+      <section class="portfolio-banner">
+        <div class="custom-flex-container mb-3">
+          <div class="custom-col photography-col">
+            <div class="d-flex flex-column justify-content-end w-100  h-100 pb-3 g-lg-4">
+              <!-- <main id="main-content" role="main"> -->
+                <h1 role="heading" class="w-100 text-center">Photography</h1>
+                <div class="d-flex justify-content-evenly w-100">
+                  <a href="#live-events-heading" type="button" class="btn btn-secondary luminary rounded-pill">Live Events</a>
+                  <a href="#architecture-heading" type="button" class="btn btn-secondary luminary rounded-pill">Architecture</a>
+                  <a href="#landscapes-heading" type="button" class="btn btn-secondary luminary rounded-pill">Landscapes</a>
+                </div>
+              <!-- </main> -->
+            </div>
+          </div>
+          <div class="custom-col videography-col">
+            <div class="d-flex flex-column justify-content-end w-100  h-100 pb-3 g-lg-4">
+              <h1 role="heading" class="w-100 text-center">Videography</h1>
+              <div class="d-flex justify-content-evenly w-100">
+                <a href="#live-events-video-heading" type="button" class="btn btn-secondary luminary rounded-pill">Live
+                  Events</a>
+                <a href="#architecture-video-heading" type="button"
+                  class="btn btn-secondary luminary rounded-pill">Architecture</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="custom-col videography-col">
-          <div class="d-flex flex-column justify-content-end w-100  h-100 pb-3 g-lg-4">
-            <h1 class="w-100 text-center">Videography</h1>
-            <div class="d-flex justify-content-evenly w-100">
-              <a href="#live-events-video" type="button" class="btn btn-secondary luminary rounded-pill">Live Events</a>
-                <a href="#architecture-video" type="button" class="btn btn-secondary luminary rounded-pill">Architecture</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Photo Galleries -->
-    <section class="photo-gallery-section">
-      <h1 class="text-center custom-font-2 p-4">Photography</h1>
-      <div class="live-events-gallery flex-gallery">
-        <h2 class="text-center p-4" id="live-events">Live Events</h2>
-        <div class="d-flex flex-wrap gap-5 justify-content-center ">
-          <img src="./images/live-events-1.jpg" class="thumbnail-portrait rounded float-left" alt="...">
-          <img src="./images/live-events-2.jpg" class="thumbnail-portrait rounded float-left" alt="...">
-          <img src="./images/live-events-3.jpg" class="thumbnail-portrait rounded float-left" alt="...">
-          <img src="./images/live-events-4.jpg" class="thumbnail-portrait rounded float-left" alt="...">
-          <img src="./images/live-events-5.jpg" class="thumbnail-portrait rounded float-left" alt="...">
-        </div>
-      </div>
-
+      </section>
+      <!-- Photo Galleries -->
       <section class="photo-gallery-section">
-      <div class="architecture-gallery flex-gallery" id="architecture">
-        <h2 class="text-center p-4" id="architecture">Architecture</h2>
-        <div class="d-flex flex-wrap gap-5 justify-content-center ">
-          <img src="./images/architecture-1.JPG" class="thumbnail-portrait rounded float-left" alt="...">
-          <img src="./images/architecture-2.JPG" class="thumbnail-portrait rounded float-left" alt="...">
-          <img src="./images/architecture-3.JPG" class="thumbnail-portrait rounded float-left" alt="...">
-          <img src="./images/architecture-4.JPG" class="thumbnail-landscape rounded float-left" alt="...">
+        <h1 role="heading" class="text-center custom-font-2 p-4">Photography</h1>
+        <!-- Live Events -->
+        <div class="live-events-gallery flex-gallery">
+          <h2 role="heading" id="live-events-heading" class="text-center p-4">Live Events</h2>
+          <div class="d-flex flex-wrap gap-5 justify-content-center ">
+            <img role="presentation" src="./images/live-events-1.jpg" class="thumbnail-portrait rounded float-left" alt="Live Events 1">
+            <img role="presentation" src="./images/live-events-2.jpg" class="thumbnail-portrait rounded float-left" alt="Live Events 2">
+            <img role="presentation" src="./images/live-events-3.jpg" class="thumbnail-portrait rounded float-left" alt="Live Events 3">
+            <img role="presentation" src="./images/live-events-4.jpg" class="thumbnail-portrait rounded float-left" alt="Live Events 4">
+            <img role="presentation" src="./images/live-events-5.jpg" class="thumbnail-portrait rounded float-left" alt="Live Events 5">
+          </div>
         </div>
-      </div>
-
-      <div class="landscapes-gallery flex-gallery">
-        <h2 class="text-center p-4" id="landscapes">Landscapes</h2>
-        <div class="d-flex flex-wrap gap-5 justify-content-center ">
-          <img src="./images/landscapes-1.JPG" class="thumbnail-landscape rounded float" alt="...">
-          <img src="./images/landscapes-2.JPG" class="thumbnail-portrait rounded float" alt="...">
-          <img src="./images/landscapes-3.JPG" class="thumbnail-landscape rounded float" alt="...">
+        <!-- Architecture -->
+        <section class="photo-gallery-section">
+          <div class="architecture-gallery flex-gallery">
+            <h2 role="heading" id="architecture-heading" class="text-center p-4">Architecture</h2>
+            <div class="d-flex flex-wrap gap-5 justify-content-center ">
+              <img role="presentation" src="./images/architecture-1.JPG" class="thumbnail-portrait rounded float-left" alt="Architecture 1">
+              <img role="presentation" src="./images/architecture-2.JPG" class="thumbnail-portrait rounded float-left" alt="Architecture 2">
+              <img role="presentation" src="./images/architecture-3.JPG" class="thumbnail-portrait rounded float-left" alt="Architecture 3">
+              <img role="presentation" src="./images/architecture-4.JPG" class="thumbnail-landscape rounded float-left" alt="Architecture 4">
+            </div>
+          </div>
+          <!-- Landscapes -->
+          <section class="photo-gallery-section">
+          <div class="landscapes-gallery flex-gallery">
+            <h2 role="heading" id="landscapes-heading" class="text-center p-4">Landscapes</h2>
+            <div class="d-flex flex-wrap gap-5 justify-content-center ">
+              <img role="presentation" src="./images/landscapes-1.JPG" class="thumbnail-landscape rounded float" alt="Landscapes 1">
+              <img role="presentation" src="./images/landscapes-2.JPG" class="thumbnail-portrait rounded float" alt="Landscapes 2">
+              <img role="presentation" src="./images/landscapes-3.JPG" class="thumbnail-landscape rounded float" alt="Landscapes 3">
+            </div>
+          </div>
+          <!-- Carousel Live Events -->
+          <div id="carouselLiveEvents" class="carousel slide gallery-slider">
+            <h2 role="heading" id="live-events-heading" class="text-center p-4">Live Events</h2>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselLiveEventsIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselLiveEventsIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselLiveEventsIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselLiveEventsIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselLiveEventsIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img role="presentation" src="./images/live-events-1.jpg" class="d-block w-100" alt="Live Events 1">
+              </div>
+              <div class="carousel-item">
+                <img role="presentation" src="./images/live-events-2.jpg" class="d-block w-100" alt="Live Events 2">
+              </div>
+              <div class="carousel-item">
+                <img role="presentation" src="./images/live-events-3.jpg" class="d-block w-100" alt="Live Events 3">
+              </div>
+              <div class="carousel-item">
+                <img role="presentation" src="./images/live-events-4.jpg" class="d-block w-100" alt="Live Events 4">
+              </div>
+              <div class="carousel-item">
+                <img role="presentation" src="./images/live-events-5.jpg" class="d-block w-100" alt="Live Events 5">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselLiveEvents"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselLiveEvents"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+          <!-- Carousel Architecture -->
+        <div id="carouselArchitecture" class="carousel slide gallery-slider">
+          <h2 role="heading" id="architecture-heading" class="text-center p-4">Architecture</h2>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselArchitectureIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselArchitectureIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselArchitectureIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselArchitectureIndicators" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img role="presentation" src="./images/architecture-1.JPG" class="d-block w-100" alt="Architecture 1">
+            </div>
+            <div class="carousel-item">
+              <img role="presentation" src="./images/architecture-2.JPG" class="d-block w-100" alt="Architecture 2">
+            </div>
+            <div class="carousel-item">
+              <img role="presentation" src="./images/architecture-3.JPG" class="d-block w-100" alt="Architecture 3">
+            </div>
+            <div class="carousel-item">
+              <img role="presentation" src="./images/architecture-4.JPG" class="d-block w-100" alt="Architecture 4">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselArchitecture"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselArchitecture"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-      </div>
-
-      <div id="carouselLiveEvents" class="carousel slide gallery-slider">
-        <h2 class="text-center p-4" id="live-events">Live Events</h2>
+      </section>
+          <!-- Carousel Landscapes -->
+      <div id="carouselLandscapes" class="carousel slide gallery-slider">
+        <h2 role="heading" id="landscapes-heading" class="text-center p-4">Landscapes</h2>
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselLiveEventsIndicators" data-bs-slide-to="0" class="active"
+          <button type="button" data-bs-target="#carouselLandscapesIndicators" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselLiveEventsIndicators" data-bs-slide-to="1"
+          <button type="button" data-bs-target="#carouselLandscapesIndicators" data-bs-slide-to="1"
             aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselLiveEventsIndicators" data-bs-slide-to="2"
+          <button type="button" data-bs-target="#carouselLandscapesIndicators" data-bs-slide-to="2"
             aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselLiveEventsIndicators" data-bs-slide-to="3"
-            aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselLiveEventsIndicators" data-bs-slide-to="4"
-            aria-label="Slide 5"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./images/live-events-1.jpg" class="d-block w-100" alt="...">
+            <img role="presentation" src="./images/landscapes-1.JPG" class="d-block w-100" alt="Landscapes 1">
           </div>
           <div class="carousel-item">
-            <img src="./images/live-events-2.jpg" class="d-block w-100" alt="...">
+            <img role="presentation" src="./images/landscapes-2.JPG" class="d-block w-100" alt="Landscapes 2">
           </div>
           <div class="carousel-item">
-            <img src="./images/live-events-3.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./images/live-events-4.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./images/live-events-5.jpg" class="d-block w-100" alt="...">
+            <img role="presentation" src="./images/landscapes-3.JPG" class="d-block w-100" alt="Landscapes 3">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselLiveEvents" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselLandscapes" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselLiveEvents" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselLandscapes" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </section>
-
-    <div id="carouselArchitecture" class="carousel slide gallery-slider">
-      <h2 class="text-center p-4" id="architecture">Architecture</h2>
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselArchitectureIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselArchitectureIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselArchitectureIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselArchitectureIndicators" data-bs-slide-to="3"
-          aria-label="Slide 4"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./images/architecture-1.JPG" class="d-block w-100" alt="...">
+      </section>
+          <!-- Videography Carousels -->
+      <h1 role="heading" class="text-center custom-font-2 p-4">Videography</h1>
+      <div id="carouselLiveEventsVideo" class="carousel slide gallery-slider">
+        <h2 role="heading" id="live-events-video-heading" class="text-center p-4">Live Events</h2>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselLiveEventsVideoIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselLiveEventsVideoIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
         </div>
-        <div class="carousel-item">
-          <img src="./images/architecture-2.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./images/architecture-3.JPG" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./images/architecture-4.JPG" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselArchitecture" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselArchitecture" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </section>
-
-  <div id="carouselLandscapes" class="carousel slide gallery-slider">
-    <h2 class="text-center p-4" id="landscapes">Landscapes</h2>
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselLandscapesIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselLandscapesIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselLandscapesIndicators" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./images/landscapes-1.JPG" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="./images/landscapes-2.JPG" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="./images/landscapes-3.JPG" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselLandscapes" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselLandscapes" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</section>
-<h1 class="text-center custom-font-2 p-4">Videography</h1>
-<div id="carouselLiveEventsVideo" class="carousel slide gallery-slider">
-  <h2 class="text-center p-4" id="live-events-video">Live Events</h2>
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselLiveEventsVideoIndicators" data-bs-slide-to="0" class="active"
-      aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselLiveEventsVideoIndicators" data-bs-slide-to="1"
-      aria-label="Slide 2"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="./images/video-placeholder.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="./images/video-placeholder.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselLiveEventsVideo" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselLiveEventsVideo" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</section>
-<div id="carouselArchitectureVideo" class="carousel slide gallery-slider">
-  <h2 class="text-center p-4" id="architecture-video">Architecture</h2>
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselArchitectureVideoIndicators" data-bs-slide-to="0" class="active"
-      aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselArchitectureVideoIndicators" data-bs-slide-to="1"
-      aria-label="Slide 2"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="./images/video-placeholder.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="./images/video-placeholder.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselArchitectureVideo" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselArchitectureVideo" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</section>
-
-        <!-- Video Galleries -->
-        <section class="video-gallery-section">
-          <div class="live-events-gallery flex-gallery">
-            <h2 class="text-center p-4" id="live-events-video">Live Events</h2>
-            <div class="d-flex flex-wrap gap-5 justify-content-center ">
-              <img src="./images/video-placeholder.jpg" class="thumbnail rounded float-left col-sm-10 col-md-5 col-lg-5" alt="...">
-              <img src="./images/video-placeholder.jpg" class="thumbnail rounded float-left col-sm-10 col-md-5 col-lg-5" alt="...">
-            </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img role="presentation" src="./images/video-placeholder.jpg" class="d-block w-100" alt="Live Events Video 1">
           </div>
-          <div class="architecture-gallery flex-gallery" id="architecture-video">
-            <h2 class="text-center p-4" id="architecture-video">Architecture</h2>
-            <div class="d-flex flex-wrap gap-5 justify-content-center ">
-              <img src="./images/video-placeholder.jpg" class="thumbnail rounded float-left col-sm-10 col-md-5 col-lg-5" alt="...">
-              <img src="./images/video-placeholder.jpg" class="thumbnail rounded float-left col-sm-10 col-md-5 col-lg-5" alt="...">
-            </div>
+          <div class="carousel-item">
+            <img role="presentation" src="./images/video-placeholder.jpg" class="d-block w-100" alt="Live Events Video 2">
           </div>
-        </section>
-  </main>
-
-  <footer class="text-light footer p-3 text-center">
-    <div
-      class=" d-flex flex-column align-content-center justify-content-center gap-2 flex-wrap flex-lg-row justify-content-lg-between align-content-lg-center"
-    >
-      <div class="footer-location d-flex gap-2 justify-content-center flex-lg-column text-lg-start">
-        <h6>Location</h6>
-        <h6>Phone Number</h6>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselLiveEventsVideo"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselLiveEventsVideo"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <span class="align-self-center"
-        >© 2024 KNSnaps. All Rights Reserved.</span
-      >
-      <div
-        class="order-first d-flex align-content-center justify-content-center gap-5 order-lg-last align-self-center"
-      >
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-linkedin"></i>
+      </section>
+      <div id="carouselArchitectureVideo" class="carousel slide gallery-slider">
+        <h2 role="heading" id="architecture-video-heading" class="text-center p-4">Architecture</h2>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselArchitectureVideoIndicators" data-bs-slide-to="0"
+            class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselArchitectureVideoIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img role="presentation" src="./images/video-placeholder.jpg" class="d-block w-100" alt="Architecture 1">
+          </div>
+          <div class="carousel-item">
+            <img role="presentation" src="./images/video-placeholder.jpg" class="d-block w-100" alt="Architecture 2">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselArchitectureVideo"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselArchitectureVideo"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </div>
-  </footer>
+      </section>
 
-  </div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/65a3214fe0.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-  </script>
-  <script src="https://kit.fontawesome.com/65a3214fe0.js" crossorigin="anonymous"></script>
-</body>
-
-</html>
+      <!-- Video Galleries -->
+      <section class="video-gallery-section">
+        <!-- Live Event Videos -->
+        <div class="live-events-gallery flex-gallery">
+          <h2 role="heading" id="live-events-video-heading" class="text-center p-4">Live Events</h2>
+          <div class="d-flex flex-wrap gap-5 justify-content-center ">
+            <img role="presentation" src="./images/video-placeholder.jpg" class="thumbnail rounded float-left col-sm-10 col-md-5 col-lg-5"
+              alt="...">
+            <img role="presentation" src="./images/video-placeholder.jpg" class="thumbnail rounded float-left col-sm-10 col-md-5 col-lg-5"
+              alt="...">
+          </div>
+        </div>
+        <!-- Architecture Videos -->
+        <div class="architecture-gallery flex-gallery">
+          <h2 role="heading" id="architecture-video-heading" class="text-center p-4">Architecture</h2>
+          <div class="d-flex flex-wrap gap-5 justify-content-center ">
+            <img role="presentation" src="./images/video-placeholder.jpg" class="thumbnail rounded float-left col-sm-10 col-md-5 col-lg-5"
+              alt="...">
+            <img role="presentation" src="./images/video-placeholder.jpg" class="thumbnail rounded float-left col-sm-10 col-md-5 col-lg-5"
+              alt="...">
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer role="contentinfo" class="text-light footer p-3 text-center">
+      <div class="d-flex flex-column align-content-center justify-content-center gap-2 flex-wrap flex-lg-row justify-content-lg-between align-content-lg-center">
+        <div class="footer-location d-flex gap-2 justify-content-center flex-lg-column text-lg-start">
+          <h6>Location</h6>
+          <h6>Phone Number</h6>
+        </div>
+        <span class="align-self-center">© 2024 KNSnaps. All Rights Reserved.</span>
+        <div class="order-first d-flex align-content-center justify-content-center gap-5 order-lg-last align-self-center">
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/65a3214fe0.js" crossorigin="anonymous"></script>
+  </body>
+  
+  </html>
