@@ -1,3 +1,4 @@
+/* Fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* font-family: "Playfair Display", serif; */
 /* font-family: "Bebas Neue", sans-serif; */
@@ -15,28 +16,7 @@
   font-family: "Roboto", sans-serif
 }
 
-
-#skipnav{
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-#skipnav a{
-  background-color:var(--primary-color);
-  color: #000;
-  font-weight: bold;
-  padding: 15px 5px;
-  position: absolute;
-  top: -50px;
-  text-decoration:none;
-}
-
-#skipnav a:focus{
-  outline: 5px solid #FFF;
-  top:0;
-}
-
+/* Reset */
 * {
   padding: 0;
   margin: 0;
@@ -48,14 +28,15 @@
   box-sizing: border-box;
 }
 
-.fa-brands {
-  aspect-ratio: 1;
-  font-size: 30px;
-  color: white;
+/* Root Variables */
+:root {
+  --primary-color: #701c59;
+  --secondary-color: #202020;
+  --tertiary-color: #DC6C27;
+  --quaternary-color: #A9EFFF;
 }
 
-/* new added style */
-
+/* General Styles */
 .img-fluid {
   aspect-ratio: 100/123;
   object-fit: contain;
@@ -66,22 +47,6 @@
   transition: all 300ms ease-in-out;
   border-radius: 20px;
   padding-block: 0px;
-}
-
-@media screen and (min-width: 923px) {
-  .hvr-round-corners:hover {
-    transition: all 300ms ease-out;
-    border-radius: 20px;
-    outline: 2px solid white;
-    color: white;
-  }
-}
-
-:root {
-  --primary-color: #701c59;
-  --secondary-color: #202020;
-  --tertiary-color: #DC6C27;
-  --quaternary-color: #A9EFFF;
 }
 
 h1 {
@@ -104,9 +69,13 @@ p.about-text {
   background-color: var(--secondary-color);
 }
 
+body {
+  color: white;
+  font-family: Roboto, sans-serif;
+}
+
 
 /* Button */
-
 .btn-primary {
   color: var(--secondary-color);
   background-color: var(--tertiary-color);
@@ -139,7 +108,27 @@ p.about-text {
   font-size: 18px;
 }
 
-/* Nav */
+/* Navigation  */
+#skipnav{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#skipnav a{
+  background-color:var(--primary-color);
+  color: #000;
+  font-weight: bold;
+  padding: 15px 5px;
+  position: absolute;
+  top: -50px;
+  text-decoration:none;
+}
+
+#skipnav a:focus{
+  outline: 5px solid #FFF;
+  top:0;
+}
 
 .nav-item:hover {
   border-radius: 5px;
@@ -167,6 +156,209 @@ p.about-text {
 .navbar ul {
   gap: 50px;
   font-size: larger;
+}
+
+/* Mobile Navigation - White Toggler Icon */
+.navbar-toggler-icon {
+  background-color: white;
+}
+
+#toggeler {
+  color: white;
+}
+
+.navbar a.active {
+  color: white !important;
+  border-radius: 20px;
+  outline: 2px solid white;
+  color: white;
+}
+
+/* Home Page */
+.main-home {
+  background-image: url("/images/home-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Portfolio Page */
+.portfolio-page.navbar {
+  background-color: var(--secondary-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  color: white;
+}
+
+.custom-flex-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.custom-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  height: 90%;
+  flex: 50%;
+  height: 90%;
+  background-color: black;
+  border: 1px solid #dc6c27;
+  border-top: 0;
+  color: white;
+}
+
+.photography-col {
+  background-image: url("./images/portolio-bg-1.jpg");
+  background-size: cover;
+}
+
+.videography-col {
+  background-image: url("./images/portolio-2-bg.JPG");
+  background-size: cover;
+}
+
+.main-portfolio {
+  padding-bottom: 200px;
+}
+
+/* Galleries */
+.thumbnail-portrait {
+  width: 218px;
+  height: 273px;
+  object-fit: cover;
+}
+
+.thumbnail-landscape {
+  height: 273px;
+  object-fit: cover;
+}
+
+.thumbnail{
+  width: 100%;
+  object-fit: cover;
+}
+
+/* About Page */
+.main-about {
+  background-image: url("/images/about-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contact Page */
+.main-contact {
+  background-image: url("/images/contact-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* Form Container */
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 160px auto 0 auto;
+}
+
+.form-container form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-control{
+  background-color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--primary-color);
+}
+
+.fa-brands {
+  aspect-ratio: 1;
+  font-size: 30px;
+  color: white;
+}
+
+.footer-location ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-location ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+/* Contact Page - Icons */
+
+.contactIcons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon {
+  text-align: center;
+}
+
+.icon i {
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+.icon span {
+  display: block;
+  margin-top: 5px;
+  color: white;
+}
+
+.icon a {
+  text-decoration: none;
+}
+
+/* Media Queries */
+@media screen and (min-width: 923px) {
+  .hvr-round-corners:hover {
+    transition: all 300ms ease-out;
+    border-radius: 20px;
+    outline: 2px solid white;
+    color: white;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -228,105 +420,29 @@ p.about-text {
   p.about-text {
     font-size: 16px;
   }
-}
 
-/* Mobile Nav - White Toggler Icon */
-
-.navbar-toggler-icon {
-  background-color: white;
-}
-
-#toggeler {
-  color: white;
-}
-
-.navbar a.active {
-  color: white !important;
-  border-radius: 20px;
-  outline: 2px solid white;
-  color: white;
-}
-
-.main-home {
-  background-image: url("/images/home-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-body {
-  color: white;
-  font-family: Roboto, sans-serif;
-}
-
-/* Portfolio Page */
-
-.portfolio-page.navbar {
-  background-color: var(--secondary-color);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  color: white;
-}
-
-.custom-flex-container {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-}
-
-.custom-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  height: 90%;
-  flex: 50%;
-  height: 90%;
-  background-color: black;
-  border: 1px solid #dc6c27;
-  border-top: 0;
-  color: white;
-}
-
-.photography-col {
-  background-image: url("./images/portolio-bg-1.jpg");
-  background-size: cover;
-}
-
-.videography-col {
-  background-image: url("./images/portolio-2-bg.JPG");
-  background-size: cover;
-}
-
-.main-portfolio {
-  padding-bottom: 200px;
-}
-
-/* Galleries */
-
-.thumbnail-portrait {
-  width: 218px;
-  height: 273px;
-  object-fit: cover;
-}
-
-.thumbnail-landscape {
-  height: 273px;
-  object-fit: cover;
+  .main-portfolio .custom-flex-container{
+    height: 85vh;
+  }
+  .main-portfolio .custom-flex-container .custom-col{
+    height: 50%;
+  }
+  } 
+  
+  .live-events-gallery{
+  
+    width: 100%;
+  
 }
 
 @media only screen and (max-width: 600px) {
   .gallery-slider {
     display: block;
+  }
+
+  .live-events-gallery img{
+    width: 100%;
+    object-fit: cover;
   }
 }
 
@@ -334,80 +450,6 @@ body {
   .gallery-slider {
     display: none;
   }
-}
-
-/* About */
-.main-about {
-  background-image: url("/images/about-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  min-height: 100vh;
-  min-width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Contact */
-.main-contact {
-  background-image: url("/images/contact-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-}
-
-/* .wrapper{
-  display: flex;
-  width: 100%;
-  max-width: 1200px;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  border: 1px solid #dc6c27;
-
-} */
-.form-container {
-  width: 100%;
-  max-width: 600px;
-  margin: 160px auto 0 auto;
-}
-
-.form-container form {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.form-control{
-  background-color: var(--secondary-color);
-}
-
-/* Footer */
-
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background-color: var(--primary-color);
-}
-
-.contactIcons i {
-  font-size: 30px;
-  color: white;
-  margin: 10px;
 }
 
 @media only screen and (min-width: 922px) {

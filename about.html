@@ -13,14 +13,7 @@
 </head>
 
 <body>
-  <div>
-    <ul id="skipnav">
-      <li>
-        <a href="#main-content" aria-label="Skip to main content">Skip to main content</a>
-      </li>
-    </ul>
-  </div>
-  <!-- Navbar -->
+  <!-- Navigation  -->
   <header role="banner">
     <nav role="navigation" class="navbar navbar-expand-lg text-white p-3 align-content-between flex-wrap justify-content-between">
       <div class="d-flex justify-content-between flex-wrap w-100">
@@ -54,10 +47,10 @@
       </div>
     </div>
   </nav>
+
   <!-- Main -->
   <main class="main-about">
     <div class="d-flex p-5 flex-column justify-content-center flex-lg-column text-lg-start">
-      <!-- <main id="main-content" role="main"> -->
       <h2 role="heading" class="custom-font">
         Hello my name is
       </h2>
@@ -81,30 +74,60 @@
         videography or photography, please feel free to contact me through
         my website.
       </p>
-    <!-- </main> -->
-  </div>
+    </div>
 </main>
+
 <!-- Footer -->
 <footer role="contentinfo" class="text-light footer p-3 text-center">
-    <div class="d-flex flex-column align-content-center justify-content-center gap-2 flex-wrap flex-lg-row justify-content-lg-between align-content-lg-center">
-      <div class="footer-location d-flex gap-2 justify-content-center flex-lg-column text-lg-start">
-        <h6>Location</h6>
-        <h6>Phone Number</h6>
-      </div>
-      <span class="align-self-center">© 2024 KNSnaps. All Rights Reserved.</span>
-      <div class="order-first d-flex align-content-center justify-content-center gap-5 order-lg-last align-self-center">
-          <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
-          <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
-      </div>
+  <div
+    class="d-flex flex-column align-content-center justify-content-center gap-2 flex-wrap flex-lg-row justify-content-lg-between align-content-lg-center"
+  >
+    <div
+      class="footer-location d-flex gap-2 justify-content-center flex-lg-column text-lg-start"
+    >
+    <ul>
+      <li itemscope itemtype="https://schema.org/PostalAddress">
+        <a href="https://maps.app.goo.gl/FiwTC5nqb5EWd4KUA">
+          Location
+        </a>
+      </li>
+        <li itemscope itemtype="https://schema.org/PostalAddress">
+        Phone Number<span itemprop="telephone"></span>
+      </li>
+    </ul>
+
     </div>
+    
+    <p class="align-self-center"
+      >© 2024 KNSnaps. All Rights Reserved.</p
+    >
+    <div
+      class="location order-first d-flex align-content-center justify-content-center gap-5 order-lg-last align-self-center"
+    >
+      <a href="https://www.facebook.com" aria-label="Facebook icon" role="link"
+        ><i class="fa-brands fa-facebook"></i
+      ></a>
+      <a href="https://www.instagram.com" aria-label="Instagram icon" role="link"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+      <a href="https://www.youtube.com" aria-label="YouTube icon" role="link"
+        ><i class="fa-brands fa-youtube"></i
+      ></a>
+      <a href="https://www.linkedin.com" aria-label="Linkedin icon" role="link"
+        ><i class="fa-brands fa-linkedin"></i
+      ></a>
+    </div>
+  </div>
 </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-  </script>
-  <script src="https://kit.fontawesome.com/65a3214fe0.js" crossorigin="anonymous"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://kit.fontawesome.com/65a3214fe0.js"
+  crossorigin="anonymous"
+></script>
 </body>
-
 </html>
