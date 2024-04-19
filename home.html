@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <!-- Style Sheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
 
   <body>
@@ -107,42 +107,37 @@
         <div
           class="footer-location d-flex gap-2 justify-content-center flex-lg-column text-lg-start"
         >
-          <ul>
+        <ul>
+          <li itemscope itemtype="https://schema.org/PostalAddress">
+            <a href="https://maps.app.goo.gl/FiwTC5nqb5EWd4KUA" aria-label="Location">
+              Location
+            </a>
+          </li>
             <li itemscope itemtype="https://schema.org/PostalAddress">
-              <a href="https://maps.app.goo.gl/FiwTC5nqb5EWd4KUA"> Location </a>
-            </li>
-            <li itemscope itemtype="https://schema.org/PostalAddress">
-              Phone Number<span itemprop="telephone"></span>
-            </li>
-          </ul>
-        </div>
+              <a href="tel:+1234567890" aria-label="Phone Number">
+            Phone Number
+          </a>
+        </li>
+      </ul>
 
-        <p class="align-self-center">© 2024 KNSnaps. All Rights Reserved.</p>
+        </div>
+        
+        <p class="align-self-center"
+          >© 2024 KNSnaps. All Rights Reserved.</p
+        >
         <div
           class="location order-first d-flex align-content-center justify-content-center gap-5 order-lg-last align-self-center"
         >
-          <a
-            href="https://www.facebook.com"
-            aria-label="Facebook icon"
-            role="link"
+          <a href="https://www.facebook.com" aria-label="Facebook icon" role="link"
             ><i class="fa-brands fa-facebook"></i
           ></a>
-          <a
-            href="https://www.instagram.com"
-            aria-label="Instagram icon"
-            role="link"
+          <a href="https://www.instagram.com" aria-label="Instagram icon" role="link"
             ><i class="fa-brands fa-instagram"></i
           ></a>
-          <a
-            href="https://www.youtube.com"
-            aria-label="YouTube icon"
-            role="link"
+          <a href="https://www.youtube.com" aria-label="YouTube icon" role="link"
             ><i class="fa-brands fa-youtube"></i
           ></a>
-          <a
-            href="https://www.linkedin.com"
-            aria-label="Linkedin icon"
-            role="link"
+          <a href="https://www.linkedin.com" aria-label="Linkedin icon" role="link"
             ><i class="fa-brands fa-linkedin"></i
           ></a>
         </div>
