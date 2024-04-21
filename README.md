@@ -18,4 +18,4 @@ For this assignment, I followed a process that involved creating a prototype usi
   - Roboto
 
 ## Link to Web Portfolio
-[Home](https://nall0008.github.io/portfolio/home.html)
+[Home](https://nall0008.github.io/portfolio/index.html)
