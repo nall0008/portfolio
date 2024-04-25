@@ -252,7 +252,7 @@ body {
 
 /* About Page */
 .main-about {
-  background-image: url("/images/about-bg.jpg");
+  background-image: url("./images/about-bg.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -267,7 +267,7 @@ body {
 
 /* Contact Page */
 .main-contact {
-  background-image: url("/images/contact-bg.jpg");
+  background-image: url("./images/contact-bg.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
